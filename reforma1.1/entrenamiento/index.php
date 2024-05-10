@@ -31,7 +31,6 @@ include '../php/usuario.php';
                     <label for="showDrop" class="mobile-item">Usuario</label>
                     <ul class="drop-menu">
                         <li><a href=<?php echo $enlacePerfil ?>><?php echo $textoEnlacePerfil ?></a></li>
-                        <li><a href="#">Editar perfil</a></li>
                         <li><a href=<?php echo $link ?>><?php echo $sesion ?></a></li>
                     </ul>
                 </li>
@@ -64,6 +63,8 @@ include '../php/usuario.php';
     <div class="box-formulario-entreno">
       <h1> ¿Quieres crear tu propio entreno? </h2>
       <h2> Entonces registrate aquí </h3>
+      <a href="../perfil/index.html" class="boton-acceder">Acceder</a>
+    </div>
   
         <script src="../js/conectores.js"></script>
 

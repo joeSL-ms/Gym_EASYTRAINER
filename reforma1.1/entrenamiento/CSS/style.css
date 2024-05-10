@@ -142,13 +142,29 @@ body{
 .box-formulario-entreno{
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .box-formulario-entreno h1{
-    text-align: center;
     margin: 30px 30px;
     color: white;
 }
+
+.box-formulario-entreno h2{
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(78, 69, 147);
+}
+
+.boton-acceder {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
 
 .formulario-entreno{
     color: white;

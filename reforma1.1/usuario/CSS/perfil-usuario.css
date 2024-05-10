@@ -72,10 +72,10 @@ body{
     width: 70%;
     display: grid;
     max-width: 750px;
+    justify-content: center;
     grid-template-areas: 
     "nombre links"
     "contenido links"
-    "foros links"
 }
 .perfil-usuario-body ul{
     list-style: none;
@@ -85,9 +85,6 @@ body{
 }
 .perfil-usuario-contenido{
     grid-area: contenido;
-}
-.perfil-usuario-foros{
-    grid-area: foros;
 }
 
 .titulo {
@@ -101,7 +98,7 @@ body{
     font-size: 0.95em;
 }
 
-.perfil-usuario-contenido,.perfil-usuario-foros, .perfil-usuario-nombre {
+.perfil-usuario-contenido, .perfil-usuario-nombre {
     display: flex;
     flex-wrap: wrap;
     padding: 1.5rem 2rem;
@@ -112,6 +109,7 @@ body{
     width: 100%;
     margin-bottom: 1.25rem;
     text-align: center;
+    
 }
 
 .mensaje a {
@@ -123,6 +121,17 @@ body{
 .mensaje a:hover {
     color: #309B76;
     transform: scale(1.4)
+}
+
+.btn.btn-danger {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn.btn-danger:hover {
+    background-color: #ff5252; /* Cambia el color de fondo al pasar el ratón */
 }
 
 /* Media Queries */

@@ -1,4 +1,6 @@
-<?php include '../php/verificacion.php'; ?>
+<?php include '../php/verificacion.php'; 
+include '../php/usuario.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,8 +32,7 @@
           <label for="showDrop" class="mobile-item">Usuario</label>
           <ul class="drop-menu">
             <li><a href=<?php echo $enlacePerfil ?>><?php echo $textoEnlacePerfil ?></a></li>
-            <li><a href="#">Editar perfil</a></li>
-            <li><a href="../perfil/index.html">Cerrar sesión</a></li>
+            <li><a href=<?php echo $link ?>><?php echo $sesion ?></a></li>
           </ul>
         </li>
       </ul>

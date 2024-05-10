@@ -6,7 +6,7 @@ header {
 	padding: 1rem;
 }
 header h1 {
-	margin-left: 45%;
+	margin: auto;
 }
 header form {
 	display: flex;
@@ -46,6 +46,7 @@ section {
 	flex: 1;
 	margin-right: 2rem;
 	margin-bottom: 2rem;
+	text-align: center;
 }
 
 section h2 {
@@ -70,6 +71,7 @@ section a {
 section a:hover {
 	text-decoration: underline;
 }
+
 
 
 @media only screen and (max-width:600px) {

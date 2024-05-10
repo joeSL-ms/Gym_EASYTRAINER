@@ -32,7 +32,7 @@
                         <ul class="drop-menu">
                             <li><a href=<?php echo $enlace?>><?php echo $nombre?></a></li>
                             <li><a href="#">Editar perfil</a></li>
-                            <li><a href="../perfil/index.html">Cerrar sesión</a></li>
+                            <li><a href=<?php echo $link ?>><?php echo $sesion ?></a></li>
                         </ul>
                     </li>
                 </ul>
@@ -46,7 +46,15 @@
                 <div class="perfil-usuario-header">
                     <div class="perfil-usuario-portada">
                         <div class="perfil-usuario-avatar">
-                            <img src="http://localhost/multimedia/relleno/img-c9.png" alt="img-avatar">
+                            <img id="avatar" src="../img/avatar-default.jpg" alt="img-avatar">
+                        </div>
+                        <button type="button" class="boton-portada" onclick="mostrarAvatarMenu()">
+                            <i class="fa fa-user"></i> Cambiar Avatar
+                        </button>
+                        <div id="avatar-menu" class="menu" style="display: none;">
+                            <button type="button" onclick="cambiarAvatar(1)">Avatar 1</button>
+                            <button type="button" onclick="cambiarAvatar(2)">Avatar 2</button>
+                            <button type="button" onclick="cambiarAvatar(3)">Avatar 3</button>
                         </div>
                         <button type="button" class="boton-portada" onclick="mostrarMenu()">
                             <i class="fa fa-image"></i> Cambiar fondo
@@ -65,7 +73,6 @@
                 <div class="perfil-usuario-body">
                     <div class="perfil-usuario-nombre" class="usuario-contenido">
                         <h3 class="titulo"><?php echo $username ?></h3>
-                        <p class="texto">Descripción breve del usuario.</p>
                     </div>
                     <div class="perfil-usuario-contenido" class="usuario-contenido">
                         <h3 class="titulo">Entrenos creados</h3>
@@ -96,7 +103,9 @@
                                 <td><?php echo $row['Repeticiones']?></td>
                                 <td><?php echo $row['Peso']?></td>
                                 <td>
-                                    <a href="../php/delete_row.php?id=<?php echo $row['ID'] ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                    <a href="../php/delete_row.php?id=<?php echo $row['ID'] ?>" class="btn btn-danger">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                 </td>
                             </tr>
                         <?php }?>
@@ -106,21 +115,7 @@
                     </div>
                 </div>
 
-                <script>
-                    function mostrarMenu() {
-                        var menu = document.getElementById('menu');
-                        if (menu.style.display === 'none') {
-                            menu.style.display = 'block';
-                        } else {
-                            menu.style.display = 'none';
-                        }
-                    }
-                    function cambiarFondo(color) {
-                        document.querySelector('.perfil-usuario-portada').style.backgroundImage = 'linear-gradient(45deg, ' + color + ', transparent)';
-                        document.getElementById('menu').style.display = 'none'; // Oculta el menú después de seleccionar un color
-                    }
-
-                </script>
+                <script src="../js/cambios-perfil-usuario.js"></script>
 
 
 

@@ -11,7 +11,11 @@ if (isset($_SESSION['username'])) {
     $textoEnlaceEntreno = "MIS ENTRENOS";
 
 } else {
+<<<<<<< HEAD
     $enlacePerfil = "../perfil/index.php"; // Reemplaza esto con la ruta correcta
+=======
+    $enlacePerfil = "../perfil/index.html"; // Reemplaza esto con la ruta correcta
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
     $textoEnlacePerfil = "Perfil";
     $enlaceEntreno = "../entrenamiento/index.php"; // Reemplaza esto con la ruta correcta
     $textoEnlaceEntreno = "Entrenamientos";

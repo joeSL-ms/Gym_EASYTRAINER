@@ -25,12 +25,19 @@
         }
         if ($conn->query($sql) === TRUE) {
             echo "Datos insertados correctamente.<br>";
+<<<<<<< HEAD
             $_SESSION['message'] = 'Ahorra haz tu primer Login Porfavor.';
             $_SESSION['message_type'] = 'primary';
+=======
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
         } else {
             echo "Error al insertar datos: " . $conn->error . "<br>";
         }   
     }
     $conn->close();
+<<<<<<< HEAD
     header("Location: ../perfil/index.php")
+=======
+    header("Location: ../perfil/index.html")
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
 ?>

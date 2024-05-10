@@ -6,10 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="CSS/style.css">
+<<<<<<< HEAD
     <title>Comunidad |Easy Trainer</title>
 	<?php include("comunidad.php")?>
 	<?php include("../php/db.php")?>
     <?php include("../php/usuario.php")?>
+=======
+    <title>Document</title>
+	<?php include("comunidad.php")?>
+	<?php include("../php/db.php")?>
+    <style>
+        /* Basic styling for the forum table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
 </head>
 <body>
 <nav>
@@ -201,6 +225,7 @@
             </div>		
 		</section>
 	</main>
+<<<<<<< HEAD
        <!-- Pie de página -->
        <footer class="small bg-dark text-white">
       <div class="contfooter">
@@ -211,6 +236,8 @@
         </ul>
       </div>
     </footer>
+=======
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
     <script src="../js/conectores.js"></script>
     <script src="../js/interact.js"></script>
 </body>

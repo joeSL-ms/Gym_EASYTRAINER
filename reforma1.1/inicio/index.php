@@ -13,7 +13,10 @@ include '../php/usuario.php';
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>EasyTrainer</title>
     <link rel="icon" type="image/x-icon" href="../img/icon.ico">
+<<<<<<< HEAD
     
+=======
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
 </head>
 <body>
   <nav>
@@ -269,6 +272,7 @@ include '../php/usuario.php';
           <input type="email" placeholder="email@domain.com" /><button>&#10003;</button>
         </div>
       </div>
+<<<<<<< HEAD
       <div class="container py-4">
         <ul class="list">
           <li class="list-inline-item">&copy; 2024 JRM Company, LLC.</li>
@@ -278,6 +282,10 @@ include '../php/usuario.php';
       </div>
       <hr />
     
+=======
+      <hr />
+    </footer>
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
     <script src="js.js"></script>
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>

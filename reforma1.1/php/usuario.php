@@ -7,7 +7,11 @@ if(isset($_SESSION["username"])){
     $sesion = "Cerrar sesión";
 }else{
     $username = "Nombre del usuario";
+<<<<<<< HEAD
     $enlace = "../perfil/index.php";
+=======
+    $enlace = "../perfil/index.html";
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
     $nombre = "Perfil";
     $link = $enlace;
     $sesion = "Iniciar sesión";

@@ -184,6 +184,7 @@ nav input{
 .body-text div{
   font-size: 45px;
   font-weight: 600;
+<<<<<<< HEAD
 }
 table {
   width: 100%;
@@ -222,4 +223,6 @@ tr:hover {
 }
 .box-formulario-entreno{
   padding-top: 40px;
+=======
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
 }

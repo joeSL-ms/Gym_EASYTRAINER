@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+<?php include '../php/usuario.php'; ?>
+<?php include '../php/verificacion.php'; ?>
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,11 +14,14 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Perfil | EasyTrainer</title>
         <link rel="icon" type="image/x-icon" href="../img/icon.ico">
+<<<<<<< HEAD
          <!--Font Awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
         <?php include("../php/usuario.php")?>
         <?php include ('../php/verificacion.php') ?>
 
+=======
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
     </head>
 
     <body>
@@ -26,14 +34,24 @@
                     <label for="close-btn" class="btn close-btn"><i class="fa fa-times"></i></label>
                     <li><a href="../inicio/index.php">Inicio</a></li>
                     <li><a href=<?php echo $enlaceEntreno ?> data-hover= <?php echo $textoEnlaceEntreno ?>><?php echo $textoEnlaceEntreno ?></a></li>
+<<<<<<< HEAD
                         <li><a href="../comunidad/index.php">Comunidad</a></li>
+=======
+                        <li><a href="index.php">Comunidad</a></li>
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
                     <li><a href="../inicio/index.php #contacto">Contacto</a></li>
                     <li>
                         <a href="#" class="desktop-item">Usuario</a>
                         <input type="checkbox" id="showDrop">
                         <label for="showDrop" class="mobile-item">Usuario</label>
                         <ul class="drop-menu">
+<<<<<<< HEAD
                             <li><a href="../php/cerrar_sesion.php">Cerrar session</a></li>
+=======
+                            <li><a href=<?php echo $enlace?>><?php echo $nombre?></a></li>
+                            <li><a href="#">Editar perfil</a></li>
+                            <li><a href=<?php echo $link ?>><?php echo $sesion ?></a></li>
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
                         </ul>
                     </li>
                 </ul>
@@ -90,6 +108,7 @@
                         </tr>
                     </thead>
                     <tbody>
+<<<<<<< HEAD
                     <?php
                         include "../php/session.php";
                         $id_usu= "SELECT id FROM usuario WHERE username LIKE '$username'"; 
@@ -107,6 +126,15 @@
                         
 
                             while($row = mysqli_fetch_array($resultado)) {  ?>
+=======
+                        <?php
+                        include "../php/session.php";
+                        $query = "SELECT * FROM entrenamientos ";
+                        $result = mysqli_query($conn, $query);
+                        
+
+                        while($row = mysqli_fetch_array($result)) {  ?>
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
                             <tr>
                                 <td><?php echo $row['NombreEntrenamiento']?></td>
                                 <td><?php echo $row['NombreEjercicio']?></td>
@@ -114,12 +142,21 @@
                                 <td><?php echo $row['Repeticiones']?></td>
                                 <td><?php echo $row['Peso']?></td>
                                 <td>
+<<<<<<< HEAD
                                     <a href="../php/delete_row.php?id=<?php echo $row['ID'] ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>           
                                 </td>
                             </tr>
                         <?php }
                         }
                     }?>
+=======
+                                    <a href="../php/delete_row.php?id=<?php echo $row['ID'] ?>" class="btn btn-danger">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        <?php }?>
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
                     </tbody>
                 </table>
             </div>
@@ -130,6 +167,7 @@
 
 
 
+<<<<<<< HEAD
         
             </section>
                     <!-- Pie de página -->
@@ -142,5 +180,16 @@
         </ul>
       </div>
     </footer>
+=======
+                <!-- Pie de página -->
+                <footer>
+                    <!-- Información de empresa, contacto, redes sociales, etc. -->
+                    <div class="redes-sociales">
+                    <p>Síguenos en:</p>
+                    </div>
+                    <p>Derechos de autor © 2024 Extreme Easy Trainer. Todos los derechos reservados.</p>
+                </footer>
+            </section>
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
     </body>
 </html>

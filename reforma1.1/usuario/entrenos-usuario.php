@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Entrenamientos | EasyTrainer </title>
     <link rel="icon" type="image/x-icon" href="../img/icon.ico">
+<<<<<<< HEAD
     <?php include("../php/usuario.php")?>
      <!--Font Awesome-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     
 </head>
 <div>
+=======
+</head>
+<body>
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
     <nav>
         <div class="wrapper" >
             <div class="logo"><a href="#"><img src="../img/logo.png" alt="Logo"></a></div>
@@ -33,6 +38,10 @@
                     <label for="showDrop" class="mobile-item">Usuario</label>
                     <ul class="drop-menu">
                         <li><a href=<?php echo $enlacePerfil ?>><?php echo $textoEnlacePerfil ?></a></li>
+<<<<<<< HEAD
+=======
+                        <li><a href="#">Editar perfil</a></li>
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
                         <li><a href=<?php echo $link ?>><?php echo $sesion ?></a></li>
                     </ul>
                 </li>
@@ -46,6 +55,7 @@
       <div class="carousel">
         <div class="carousel-elemento imagen-1 active">
           <p>Entrenamiento default 1</p>
+<<<<<<< HEAD
           <a target="blank" href="https://i.postimg.cc/bv7xCyyq/Captura-de-pantalla-2024-05-10-084528.png" class="btn-probar">Probar</a>
         </div>
         <div class="carousel-elemento imagen-2">
@@ -55,6 +65,17 @@
         <div class="carousel-elemento imagen-3">
           <p>Entrenamiento default 3</p>
           <a target="blank" href="https://i.postimg.cc/J06tFxNj/Captura-de-pantalla-2024-05-10-084849.png" class="btn-probar">Probar</a>
+=======
+          <a href="https://i.postimg.cc/bv7xCyyq/Captura-de-pantalla-2024-05-10-084528.png" class="btn-probar">Probar</a>
+        </div>
+        <div class="carousel-elemento imagen-2">
+          <p>Entrenamiento default 2</p>
+          <a href="https://i.postimg.cc/BbZByG8T/Captura-de-pantalla-2024-05-10-084745.png" class="btn-probar">Probar</a>
+        </div>
+        <div class="carousel-elemento imagen-3">
+          <p>Entrenamiento default 3</p>
+          <a href="https://i.postimg.cc/J06tFxNj/Captura-de-pantalla-2024-05-10-084849.png" class="btn-probar">Probar</a>
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
         </div>
       </div>
       <div class="carousel-botones">
@@ -89,6 +110,7 @@
               </form>
           </div>
         </div>
+<<<<<<< HEAD
           <div class="box-formulario-entreno">
             <table class="table">
                     <thead>
@@ -135,6 +157,8 @@
                     </tbody>
                 </table>
               </div>
+=======
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
     
         <script src="../js/conectores.js"></script>
 
@@ -142,6 +166,7 @@
     
     <script src="../js/interact.js"></script>
     <script src="../js/carousel-prueba.js"></script>
+<<<<<<< HEAD
        <!-- Pie de página -->
        <footer>
       <div class="contfooter">
@@ -149,6 +174,14 @@
           <li class="list-inline-item">&copy; 2024 JRM Company, LLC.</li>
           <li class="list-inline-item">Todos los derechos reservados. @EasyTrainer</li>
           <li class="list-inline-item"><a target="blank" href="https://www.privacypolicies.com/live/fec8d74e-b1ce-48de-8125-d8df54c48f1d">Política de privacidad</a>.</li>
+=======
+    <footer class="small bg-dark text-white">
+      <div class="container py-4">
+        <ul class="list-inline mb-0 text-center">
+          <li class="list-inline-item">&copy; 2017 Web Company, Inc.</li>
+          <li class="list-inline-item">All rights reserved.</li>
+          <li class="list-inline-item"><a href="#">Terms of use and privacy policy</a>.</li>
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
         </ul>
       </div>
     </footer>

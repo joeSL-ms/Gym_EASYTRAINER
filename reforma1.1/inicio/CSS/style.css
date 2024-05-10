@@ -43,6 +43,7 @@ h3,h4{
         object-fit: cover;
     }
 
+<<<<<<< HEAD
 }
 .list{
     display: flex;
@@ -53,3 +54,6 @@ h3,h4{
     justify-content: space-around;
     list-style: none;
 }
+=======
+}
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1

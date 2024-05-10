@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Inicio de sesión exitoso, establece las variables de sesión si lo deseas
             $_SESSION["username"] = $row["nombre"];
             header("Location: ../usuario/perfil-usuario.php");
+<<<<<<< HEAD
             
         }
     }else{
@@ -29,6 +30,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
 }
 
+=======
+            exit();
+        }
+    }else{
+        header("Location: ../perfil/index.html");
+        }
+}
+echo "hola";
+>>>>>>> fccee8da0a86a8682aae27fe2473b56a2a7a5cf1
 
 // Cerrar conexión
 $conn->close();

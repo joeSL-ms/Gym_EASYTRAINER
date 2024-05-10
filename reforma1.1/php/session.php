@@ -1,9 +1,8 @@
 <?php
-include "credenciales.php";
-    $servidor = $ser;
-    $usuario = $nombre;
-    $contraseña = $pass;
-    $database = $db;
+    $servidor = "localhost";
+    $usuario = "easytrainer";
+    $contraseña = "c0ntr4s3n14";
+    $database = "easytrainer";
 
     $conn = new mysqli($servidor,$usuario,$contraseña,$database);
 

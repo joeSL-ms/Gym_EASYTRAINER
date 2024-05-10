@@ -1,5 +1,5 @@
 <?php include '../php/usuario.php'; ?>
-
+<?php include '../php/verificacion.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +22,7 @@
                 <ul class="nav-links">
                     <label for="close-btn" class="btn close-btn"><i class="fa fa-times"></i></label>
                     <li><a href="../inicio/index.php">Inicio</a></li>
-                    <li><a href="../entrenamiento/index.php">ENTRENAMIENTOS</a></li>
+                    <li><a href=<?php echo $enlaceEntreno ?> data-hover= <?php echo $textoEnlaceEntreno ?>><?php echo $textoEnlaceEntreno ?></a></li>
                         <li><a href="index.php">Comunidad</a></li>
                     <li><a href="../inicio/index.php #contacto">Contacto</a></li>
                     <li>
@@ -64,35 +64,48 @@
                 <!-- Body de perfil de usuario (Contenido)-->
                 <div class="perfil-usuario-body">
                     <div class="perfil-usuario-nombre" class="usuario-contenido">
-                        <button class="edit" onclick="editarTexto()">Editar</button>
-                        <h3 class="titulo" id="titulo"><?php echo $username ?></h3>
+                        <h3 class="titulo"><?php echo $username ?></h3>
                         <p class="texto">Descripción breve del usuario.</p>
                     </div>
                     <div class="perfil-usuario-contenido" class="usuario-contenido">
                         <h3 class="titulo">Entrenos creados</h3>
-                    </div>
-                    <div class="perfil-usuario-foros" class="usuario-contenido">
-                        <h3 class="titulo">Foros en los que participa</h3>
+                        <div class="col-md-8">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Ejercicios</th>
+                            <th>Series</th>
+                            <th>repeticiones</th>
+                            <th>KG</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        include "../php/session.php";
+                        $query = "SELECT * FROM entrenamientos ";
+                        $result = mysqli_query($conn, $query);
+                        
+
+                        while($row = mysqli_fetch_array($result)) {  ?>
+                            <tr>
+                                <td><?php echo $row['NombreEntrenamiento']?></td>
+                                <td><?php echo $row['NombreEjercicio']?></td>
+                                <td><?php echo $row['Serie']?></td>
+                                <td><?php echo $row['Repeticiones']?></td>
+                                <td><?php echo $row['Peso']?></td>
+                                <td>
+                                    <a href="../php/delete_row.php?id=<?php echo $row['ID'] ?>" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        <?php }?>
+                    </tbody>
+                </table>
+            </div>
                     </div>
                 </div>
-                <script>
-                    function editarTexto(){
-                        var nombre = document.getElementById("titulo").textContent = "nuevo";
-                        titulo.contentEditable = true;
-                        titulo.focus();
-                        titulo.addEventListener('keydown', function(event) {
-                            if (event.keyCode === 13) { // 13 es el código de la tecla "Enter"
-                                event.preventDefault(); // Evita que se realice el salto de línea por defecto
-                                guardarTexto(titulo.textContent); // Guarda el texto modificado
-                                titulo.contentEditable = false; // Desactiva la edición del título
-                            }
-                        });
 
-                        var xhr = new XMLHttpRequest();
-                        xhr.open("GET","../php/update_nombre.php&nombre=" + nombre,true);
-                        xhr.send();
-                    }
-                </script>
                 <script>
                     function mostrarMenu() {
                         var menu = document.getElementById('menu');

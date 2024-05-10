@@ -9,6 +9,7 @@
             <td><?php echo $row['contenido']?></td>
             <td><?php echo $row['likes']?></td>
             <td><?php echo $row['creado']?></td>
+            
         </tr>
                 
 <?php }

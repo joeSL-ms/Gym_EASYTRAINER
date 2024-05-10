@@ -1,8 +1,7 @@
 <?php
-session_start();
 if(isset($_SESSION["username"])){
     $username = $_SESSION["username"];
-    $enlace = "perfil-usuario.php";
+    $enlace = "../usuario/perfil-usuario.php";
     $nombre = "Usuario";
     $link = "../php/cerrar_sesion.php";
     $sesion = "Cerrar sesion";

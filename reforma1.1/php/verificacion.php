@@ -14,6 +14,6 @@ if (isset($_SESSION['username'])) {
     $enlacePerfil = "../perfil/index.html"; // Reemplaza esto con la ruta correcta
     $textoEnlacePerfil = "PERFIL";
     $enlaceEntreno = "../entrenamiento/index.php"; // Reemplaza esto con la ruta correcta
-    $textoEnlaceEntreno = "Entrenamienos";
+    $textoEnlaceEntreno = "Entrenamientos";
 }
 ?>

@@ -12,5 +12,5 @@ if(isset($_GET['id'])){
     
    $_SESSION['message'] = 'Task Deleted succesfully';
    $_SESSION['message_type'] = 'info';
-header('Location: entrenamientos.php');
+header('Location: entrenos-usuario.php');
 }

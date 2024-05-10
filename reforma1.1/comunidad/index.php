@@ -29,18 +29,31 @@
     </style>
 </head>
 <body>
-    <nav>
-        <div><h1>Easy Trainer</h1></div>
-        <div class="top_nav">
-            <ul>
-                <li><a href="../inicio/index.php"  data-hover="INICIO">INICIO</a></li>
-                <li><a href=<?php echo $enlacePerfil ?> data-hover= <?php echo $textoEnlacePerfil ?>><?php echo $textoEnlacePerfil ?></a></li>
-                <li><a href="../entrenamiento/index.php" data-hover="ENTRENOS">ENTRENOS</a></li>
-                <li><a href="#contacto"  data-hover="CONTACTO">CONTACTO</a></li>
-                <li><a href="index.php"  data-hover="COMUNIDAD">COMUNIDAD</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav>
+		<div class="wrapper">
+			<div class="logo"><a href="#"><img src="../img/logo.png" alt="Logo"></a></div>
+			<input type="radio" name="slider" id="menu-btn">
+			<input type="radio" name="slider" id="close-btn">
+			<ul class="nav-links">
+				<label for="close-btn" class="btn close-btn"><i class="fa fa-times"></i></label>
+				<li><a href="../inicio/index.php">Inicio</a></li>
+				<li><a href=<?php echo $enlaceEntreno ?> data-hover= <?php echo $textoEnlaceEntreno ?>><?php echo $textoEnlaceEntreno ?></a></li>
+				<li><a href="index.php">Comunidad</a></li>
+				<li><a href="../inicio/index.php #contacto">Contacto</a></li>
+				<li>
+					<a href="#" class="desktop-item">Usuario</a>
+					<input type="checkbox" id="showDrop">
+					<label for="showDrop" class="mobile-item">Usuario</label>
+					<ul class="drop-menu">
+						<li><a href=<?php echo $enlacePerfil ?>><?php echo $textoEnlacePerfil ?></a></li>
+						<li><a href="#">Editar perfil</a></li>
+						<li><a href="../perfil/index.html">Cerrar sesión</a></li>
+					</ul>
+				</li>
+			</ul>
+			<label for="menu-btn" class="btn menu-btn"><i class="fa fa-bars"></i></label>
+		</div>
+	</nav>
     <header>
 		<h1>Página Foro</h1>
 	</header>

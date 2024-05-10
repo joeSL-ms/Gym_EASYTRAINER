@@ -83,12 +83,6 @@ body{
 .perfil-usuario-nombre{
     grid-area: nombre;
 }
-button.edit {
-    /* width: fit-content; */
-    /* align-self: center; */
-    background: none;
-    color: honeydew;
-}
 .perfil-usuario-contenido{
     grid-area: contenido;
 }
@@ -112,7 +106,7 @@ button.edit {
     flex-wrap: wrap;
     padding: 1.5rem 2rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, .2);
-    flex-direction: column;
+    
     background-color: #323232;
     border-radius: 15px;
     width: 100%;

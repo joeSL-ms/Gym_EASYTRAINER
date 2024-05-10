@@ -1,0 +1,230 @@
+body{
+    background-color: #1c1c1c;
+}
+
+/* Carousel de imágenes */
+
+.box-carousel {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-carousel h1 {
+    margin: 30px 30px;
+    color: white;
+}
+
+.btn-probar {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.441);
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn-probar:hover {
+    background-color: #1b1c1e;
+}
+
+.carousel-botones {
+    margin: 10px 0;
+    display: flex;
+    width: 80%;
+}
+
+.carousel-botones .carousel-boton:focus {
+    background-color: rgb(154, 163, 247);
+}
+
+.carousel-botones .carousel-boton:hover {
+    background-color: #ddd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.carousel-botones .carousel-boton:not(:nth-last-child()) {
+    margin-right: 10px;
+}
+
+.carousel-botones .carousel-boton {
+    font-size: 1rem;
+    margin-right: 10px;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    color: #000000;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.carousel {
+    width: 80%;
+    border: 3px solid rgb(206, 206, 206);
+    overflow: hidden;
+    display: grid;
+    border-radius: 5px;
+    padding: 20px;
+    grid-template-columns: repeat(6, 90%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+.carousel .carousel-elemento.active {
+    transform: scale(1) translateX(-0%);
+}
+
+.carousel .carousel-elemento {
+    width: 100%;
+    transform: translateX(-0%) scale(0.9);
+    border-radius: 5px;
+    transition: all 0.7s ease;
+    display: flex;
+    background-color: gray;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: 200px;
+    position: relative;
+}
+
+.imagen-1 {
+    background-image: url('https://i.postimg.cc/kGRbxpkY/04-B08-F96-A090-40-EF-B254-8-FD292-F3-BE00.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    color: white;
+    filter: blur(5px);
+    transition: filter 0.5s ease;
+}
+
+.imagen-2 {
+    background-image: url('https://i.postimg.cc/LXbPgp0Z/9-E0-AB82-B-CC9-F-4-BC1-A7-C3-C012-B3-EE90-A4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    color: white; 
+    filter: blur(5px);
+    transition: filter 0.5s ease;
+}
+
+.imagen-3 {
+    background-image: url('https://i.postimg.cc/k44854wm/FB76-D4-E0-7-BC5-4491-A5-F7-DE4-BEE02-CB13.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    color: white; 
+    filter: blur(5px); 
+    transition: filter 0.5s ease; 
+}
+
+.imagen-1.active,
+.imagen-2.active,
+.imagen-3.active {
+    filter: none; 
+}
+
+/* Formulario de entrenamiento */
+
+.box-formulario-entreno{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box-formulario-entreno h1{
+    margin: 30px 30px;
+    color: white;
+}
+
+.box-formulario-entreno h2{
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(78, 69, 147);
+}
+
+.boton-acceder {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+.formulario-entreno{
+    color: white;
+    background-color: #323232;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+
+form {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.box-formulario-entreno label {
+    display: block;
+    margin-top: 10px;
+}
+
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #59ff00;
+    transition: background-color 1s ease;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #9d9d9d;
+    border: 1px solid black;
+    color: black;
+}
+
+
+@media only screen and (max-width:600px) {
+    .topnav.responsive{
+        position: relative;
+    }
+
+    .topnav.responsive .icon{
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
